@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clicker Game</title>
+</head>
+<body>
+    <h1>Clicker Game</h1>
+    <button id="clickButton">Click me!</button>
+    <p>Your Points: <span id="score">0</span></p>
+
+    <script>
+        let score = 0;
+        const pointsPerClick = 1;
+
+        function updateDisplay() {
+            document.getElementById("score").innerText = score;
+        }
+
+        updateDisplay();
+
+        document.getElementById("clickButton").addEventListener("click", () => {
+            score += pointsPerClick;
+            updateDisplay();
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clicker Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Clicker Game</h1>
+        <button id="clickButton">Click me!</button>
+        <div class="game-info">
+            <p>Your Points: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 <div class="game-info">
     <p>Your Points: <span id="score">0</span></p>
 </div>
