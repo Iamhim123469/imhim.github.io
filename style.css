@@ -1,3 +1,7 @@
+.game-info {
+    color: white; /* Ensure this contrasts with your background */
+    font-size: 24px; /* Adjust font size for visibility */
+}
 button {
     background-color: #f57c00;
     color: white;
