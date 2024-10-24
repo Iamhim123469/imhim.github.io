@@ -1,4 +1,23 @@
 let score = 0; // Initial score
+const pointsPerClick = 1; // Points earned per click
+
+// Function to update the displayed score
+function updateDisplay() {
+    document.getElementById("score").innerText = score; // Update score display
+}
+
+// Initial display update
+updateDisplay();
+
+// Get the click button element
+const button = document.getElementById("clickButton");
+
+// Event listener for button clicks
+button.addEventListener("click", () => {
+    score += pointsPerClick; // Increase score by points per click
+    updateDisplay(); // Update displayed score
+});
+
 
 function updateDisplay() {
     document.getElementById("score").innerText = score; // Update score display
