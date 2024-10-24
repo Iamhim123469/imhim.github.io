@@ -1,24 +1,25 @@
-# imhim.github.io
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click the Box Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Click the Box Game</h1>
-        <div id="gameArea">
-            <div id="box"></div>
-        </div>
-        <div class="info">
-            <p>Score: <span id="score">0</span></p>
-            <p>Time Left: <span id="timeLeft">30</span> seconds</p>
-            <button id="startBtn">Start Game</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+# Advanced Clicker Game
+
+Welcome to the **Advanced Clicker Game**! This is a fun and simple web-based incremental game where you earn points by clicking and purchasing upgrades to automate the process.
+The Advanced Clicker Game is a modern take on a simple clicker game where players can:
+- Click to earn points.
+- Purchase upgrades to increase points per click.
+- Buy auto-clickers to generate points passively.
+- Use multipliers to enhance the efficiency of clicks.
+- Prestige to reset progress and earn a permanent multiplier.
+
+## Features
+
+- **Upgrades**: Purchase upgrades to increase the number of points per click.
+- **Auto-Clickers**: Automatically generate points every second.
+- **Multipliers**: Multiply your points per click with powerful upgrades.
+- **Prestige System**: Reset your progress in exchange for a permanent multiplier.
+- **Save/Load Progress**: Save your progress locally and load it later.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/clicker-game.git
