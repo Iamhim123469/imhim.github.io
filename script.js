@@ -1,3 +1,15 @@
+let score = 0; // Initial score
+
+function updateDisplay() {
+    document.getElementById("score").innerText = score; // Update score display
+}
+
+// Call updateDisplay whenever score changes
+const button = document.getElementById("clickButton");
+button.addEventListener("click", () => {
+    score += pointsPerClick * multiplier * prestigeMultiplier; // Adjust score based on your game's logic
+    updateDisplay(); // Update displayed score
+});
 // Main click button functionality
 const button = document.getElementById("clickButton");
 button.addEventListener("click", () => {
