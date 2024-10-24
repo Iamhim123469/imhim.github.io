@@ -1,4 +1,10 @@
-let score = 0;
+// Main click button functionality
+const button = document.getElementById("clickButton");
+button.addEventListener("click", () => {
+    score += pointsPerClick * multiplier * prestigeMultiplier;
+    updateDisplay();
+    checkPrestigeAvailability();
+});let score = 0;
 let pointsPerClick = 1; // Start with 1 point per click
 let autoClickerCount = 0;
 let multiplier = 1; // x2 multiplier when purchased
