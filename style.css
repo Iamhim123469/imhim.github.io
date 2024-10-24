@@ -1,13 +1,108 @@
-.upgrade-btn {
-    margin: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #28a745;
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #ffffff30;
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    background-color: #f57c00;
     color: white;
     border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffa726;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background-color: #888888;
+    cursor: not-allowed;
+}
+
+/* Upgrade Buttons */
+.upgrade-btn {
+    background-color: #009688;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .upgrade-btn:hover {
-    background-color: #218838;
+    background-color: #26a69a;
+}
+
+.upgrade-btn:disabled {
+    background-color: #607d8b;
+}
+
+/* Score and Stats */
+#score, #pointsPerClick {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffc107;
+    font-style: italic;
+}
+
+/* Save/Load Buttons */
+#saveGame, #loadGame {
+    background-color: #673ab7;
+    color: white;
+}
+
+#saveGame:hover, #loadGame:hover {
+    background-color: #9575cd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-container {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
 }
