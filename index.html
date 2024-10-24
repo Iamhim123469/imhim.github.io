@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker Game with Upgrades</title>
+    <title>Advanced Clicker Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>Clicker Game</h1>
+        <h1>Advanced Clicker Game</h1>
+
+        <!-- Score Section -->
         <button id="clickButton">Click me!</button>
         <p>Score: <span id="score">0</span></p>
         <p id="message"></p>
+        <p>Points per click: <span id="pointsPerClick">1</span></p>
 
         <!-- Upgrades Section -->
         <h2>Upgrades</h2>
@@ -19,8 +22,24 @@
         <button id="upgrade2" class="upgrade-btn">Upgrade 2 (+5 points per click) - Cost: 50</button>
         <button id="upgrade3" class="upgrade-btn">Upgrade 3 (+10 points per click) - Cost: 100</button>
 
-        <p>Points per click: <span id="pointsPerClick">1</span></p>
+        <!-- Auto-Clickers Section -->
+        <h2>Auto-Clickers</h2>
+        <button id="autoClicker" class="upgrade-btn">Auto Clicker (1 click per second) - Cost: 100</button>
+
+        <!-- Multipliers Section -->
+        <h2>Multipliers</h2>
+        <button id="multiplier" class="upgrade-btn">Click Multiplier x2 - Cost: 500</button>
+
+        <!-- Prestige Section -->
+        <h2>Prestige</h2>
+        <button id="prestige" class="upgrade-btn" disabled>Prestige - Reset for 1.1x multiplier (requires 1000 points)</button>
+
+        <!-- Save/Load -->
+        <h2>Save/Load Game</h2>
+        <button id="saveGame">Save Game</button>
+        <button id="loadGame">Load Game</button>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
